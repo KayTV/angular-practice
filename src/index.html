@@ -16,11 +16,19 @@
     <h1>My name is: {{name}}</h1>
 
     <select name="cars" ng-model="animal">
-      <option value="dog">Dog</option>
-      <option value="cat">Cat</option>
+      <option value="dogs">Dog</option>
+      <option value="cats">Cat</option>
+      <option value="lizards">Lizard</option>
+      <option value="hamsters">Hamster</option>
+      <option value="dragons">Dragon</option>
+      <option value="unicorns">Unicorn</option>
       <option value="neither">Neither</option>
     </select>
     <h3>I Love {{animal}} <3</h3>
+
+    <div ng-cloak>
+       Welcome {{data.name}}
+    </div>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
