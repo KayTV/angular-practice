@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ greeting }} World</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body style="margin-left: 10px;">
+    <!-- angular currancy -->
+    <h2>{{3.14159265359 | currency}}</h2>
+    <h3>{{(3.14159265359 | number:2) + "€"}}</h3><br>
+
+    <!-- uppercase, lowercase -->
+    <input type="text" ng-model="statement" placeholder="What?">
+    <p>lowercase: {{ statement | lowercase}}</p>
+    <p>uppercase: {{statement | uppercase}}</p><br>
+
+    <!-- decimal spaces -->
+    <h4>{{3.14159265359 | number:3}}</h4>
+    <h4>{{3.14159265359 | number:6}}</h4>
+    <h4>{{3.14159265359 | number:1}}</h4>
+
+    <p>How many digits of Pi: </p>
+    <select ng-model="pie">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
+    <p>First {{pie}} digits of pie</p>
+    <p>{{3.14159265359 | number:pie}}</p>
+
+    <h4>How much did your meal cost?<input type="text" ng-model="cost"></h4>
+    <h5>Tip?</h5>
+    <select ng-model="tip">
+      <option value=".1">10%</option>
+      <option value=".15">15%</option>
+      <option value=".20">20%</option>
+    </select>
+    <h4>Subtotal {{cost | currency}}</h4>
+    <h5>Tip {{ cost*tip | currency }}</h4>
+    <h3>Total {{tip*cost -- cost | currency}}</h3>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
