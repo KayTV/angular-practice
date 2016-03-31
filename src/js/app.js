@@ -12,11 +12,11 @@ app.controller("ExercisesController", function($scope){
 })
 
 app.controller("MadLibs", function($scope){
-  $scope.boyName="";
-  $scope.adjective="";
-  $scope.noun1="";
-  $scope.noun2="";
-  $scope.insect="";
-  $scope.noun3="";
-  $scope.verb="";
+  $scope.boyName="Billy";
+  $scope.adjective="Smokey";
+  $scope.noun1="Pianos";
+  $scope.noun2="Toes";
+  $scope.insect="Spiders";
+  $scope.noun3="Sweaters";
+  $scope.verb="Squirts";
 })
