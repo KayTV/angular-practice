@@ -1,7 +1,6 @@
 // sample angular code
 
-var app = angular.module('myApp', []);
-
-app.controller('myController', ['$scope', function($scope) {
-  $scope.greeting = "Hello World!";
-}]);
+var app = angular.module("firstApp", []);
+app.controller("MyFirstController", function($scope){
+  $scope.name = "Severus Snape";
+})

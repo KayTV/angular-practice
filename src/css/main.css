@@ -2,3 +2,15 @@
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
     display: none !important;
  }
+
+.highlight {
+  background-color: yellow;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  background-color: red;
+}
